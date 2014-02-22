@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[]]></title>
-  <link href="http://www.jeremypnauta.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: test2 | ]]></title>
+  <link href="http://www.jeremypnauta.com/blog/categories/test2/atom.xml" rel="self"/>
   <link href="http://www.jeremypnauta.com/"/>
   <updated>2014-02-22T16:25:06-07:00</updated>
   <id>http://www.jeremypnauta.com/</id>
@@ -12,24 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Test post 3]]></title>
-    <link href="http://www.jeremypnauta.com/blog/2014/02/22/test-post-3/"/>
-    <updated>2014-02-22T15:25:08-07:00</updated>
-    <id>http://www.jeremypnauta.com/blog/2014/02/22/test-post-3</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Test post 2]]></title>
-    <link href="http://www.jeremypnauta.com/blog/2014/02/22/test-post-2/"/>
-    <updated>2014-02-22T15:13:53-07:00</updated>
-    <id>http://www.jeremypnauta.com/blog/2014/02/22/test-post-2</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Javascript: Asynchronously Synchronous]]></title>

@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://jpnauta.github.io/sitemap.xml 
+Sitemap: http://www.jeremypnauta.com/sitemap.xml 
