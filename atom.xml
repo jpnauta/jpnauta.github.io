@@ -4,7 +4,7 @@
   <title><![CDATA[]]></title>
   <link href="http://www.jeremypnauta.com/atom.xml" rel="self"/>
   <link href="http://www.jeremypnauta.com/"/>
-  <updated>2014-02-22T16:25:06-07:00</updated>
+  <updated>2014-02-22T16:26:39-07:00</updated>
   <id>http://www.jeremypnauta.com/</id>
   <author>
     <name><![CDATA[Jeremy Nauta]]></name>
@@ -12,34 +12,5 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Test post 3]]></title>
-    <link href="http://www.jeremypnauta.com/blog/2014/02/22/test-post-3/"/>
-    <updated>2014-02-22T15:25:08-07:00</updated>
-    <id>http://www.jeremypnauta.com/blog/2014/02/22/test-post-3</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Test post 2]]></title>
-    <link href="http://www.jeremypnauta.com/blog/2014/02/22/test-post-2/"/>
-    <updated>2014-02-22T15:13:53-07:00</updated>
-    <id>http://www.jeremypnauta.com/blog/2014/02/22/test-post-2</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Javascript: Asynchronously Synchronous]]></title>
-    <link href="http://www.jeremypnauta.com/blog/2014/02/21/javascript-asynchronously-synchronous/"/>
-    <updated>2014-02-21T15:17:26-07:00</updated>
-    <id>http://www.jeremypnauta.com/blog/2014/02/21/javascript-asynchronously-synchronous</id>
-    <content type="html"><![CDATA[<p>Test&hellip;.</p>
-
-<p>This is a really long paragraph that goes on and on and on and on and on and on and on and on and on and on. This is a really long paragraph that goes on and on and on and on and on and on and on and on and on and on.</p>
-]]></content>
-  </entry>
   
 </feed>
