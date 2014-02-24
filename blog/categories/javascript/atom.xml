@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[]]></title>
-  <link href="http://www.jeremypnauta.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Javascript | ]]></title>
+  <link href="http://www.jeremypnauta.com/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://www.jeremypnauta.com/"/>
   <updated>2014-02-24T16:47:38-07:00</updated>
   <id>http://www.jeremypnauta.com/</id>
@@ -26,29 +26,22 @@
 
 <p><em>So what?</em> This means that Javascript callbacks can share variables with little to no headache. Consider the following situation in NodeJS:</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>var filePaths = ['test.txt', 'test2.txt'];
-</span><span class='line'>var fileCount = 0; //Indicates how many files in filePaths exist
-</span><span class='line'>
-</span><span class='line'>for (var i in filePaths) {
-</span><span class='line'>    fs.exists(filePaths[i], function(exists) {
-</span><span class='line'>        if (exists) {
-</span><span class='line'>            fileCount++; //If file exists, increase counter
-</span><span class='line'>        }
-</span><span class='line'>    });
-</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+<p>```
+var filePaths = [&lsquo;test.txt&rsquo;, &lsquo;test2.txt&rsquo;];
+var fileCount = 0; //Indicates how many files in filePaths exist</p>
 
+<p>for (var i in filePaths) {</p>
 
-<p>If this were implemented using threads, there&rsquo;s a possibility that the file count would become corrupted due to <a href="http://www.vogella.com/tutorials/JavaConcurrency/article.html">concurrency issues</a>. However, because of callbacks, the system can be efficient, yet avoid (most) threading problems.</p>
+<pre><code>fs.exists(filePaths[i], function(exists) {
+    if (exists) {
+        fileCount++; //If file exists, increase counter
+    }
+});
+</code></pre>
+
+<p>}
+```
+If this were implemented using threads, there&rsquo;s a possibility that the file count would become corrupted due to <a href="http://www.vogella.com/tutorials/JavaConcurrency/article.html">concurrency issues</a>. However, because of callbacks, the system can be efficient, yet avoid (most) threading problems.</p>
 
 <p>All in all, callbacks are hybrids of threads, balancing performance and simplicity. They are <em>asynchronously synchronous</em> because they could be called at any time, yet they cannot run at the same time as other functions.</p>
 ]]></content>

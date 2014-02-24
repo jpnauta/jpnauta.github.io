@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Jeremy Nauta</title>
+  <title>Javascript: Asynchronously Synchronous - Jeremy Nauta</title>
   <meta name="author" content="Jeremy Nauta">
 
    
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://www.jeremypnauta.com">
+  <link rel="canonical" href="http://www.jeremypnauta.com/blog/2014/02/24/javascript-asynchronously-synchronous">
   <link href="/favicon.ico" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
@@ -56,65 +56,10 @@
 <div class="container" id="main">
     <div class="row-fluid">
         <div id="content">
-            <div class="jumbotron intro">
-    <div class="container text-center">
-        <h1 class="post-title">
-            
-            Hi. I&#8217;m Jeremy Nauta.
-            
-        </h1>
-
-        <div class="tagline">
-            <p>
-                I&#8217;m a software developer from Calgary, Alberta.
-            </p>
-
-            <p>
-                Let&#8217;s talk about something.
-            </p>
-        </div>
-    </div>
-</div>
-<ul class="social-main">
-    
-<li><a href="http://github.com/jpnauta" title="Github Profile"><i
-        class="fa fa-github"></i></a></li>
-
-
-
-
-<li><a href="http://twitter.com/JeremyNauta" title="Twitter Profile">
-    <i class="fa fa-twitter"></i>
-</a></li>
-
-
-<li><a href="http://plus.google.com/100273553066405944656" title="Google+ Profile">
-    <i class="fa fa-google-plus-square"></i>
-</a></li>
-
-
-
-
-<li><a href="mailto:jeremypnauta@gmail.com" title="Email">
-    <i class="fa fa-envelope"></i>
-</a></li>
-
-</ul>
-
-<div class="blog-index">
-    
-
-    <div class="recent-posts">
-        Recent Posts
-    </div>
-    
-    
-    <article>
-        
-
-<div class="row-fluid">
-    <div class="span2 post-meta">
-        <div>
+            <div class="container container-sm">
+    <div class="jumbotron text-center">
+        <h3 class="post-title">Javascript: Asynchronously Synchronous</h3>
+        <h5>
 
 
 
@@ -126,11 +71,22 @@
   
 
 
-<i class="icon-calendar-empty"></i> <time datetime="2014-02-24T13:15:59-07:00" pubdate data-updated="true">Feb 24<span>th</span>, 2014</time></div>
+<i class="icon-calendar-empty"></i> <time datetime="2014-02-24T13:15:59-07:00" pubdate data-updated="true">Feb 24<span>th</span>, 2014</time></h5>
+        
+
+
+
+  <a href="/blog/categories/javascript/"><span class="badge">Javascript</span></a>
+
+  <a href="/blog/categories/nodejs/"><span class="badge">NodeJS</span></a>
+
+
+
+
     </div>
-    <div class="span10 post-container">
-        <a class="primary" href="/blog/2014/02/24/javascript-asynchronously-synchronous/">Javascript: Asynchronously Synchronous</a>
-        <!--<p>One of the most powerful features of Javascript is its <strong>callback</strong> system. While callbacks act similar to threads, they are distinctly different and more powerful.</p>
+    <div class="row-fluid">
+        <div class="span12">
+            <p>One of the most powerful features of Javascript is its <strong>callback</strong> system. While callbacks act similar to threads, they are distinctly different and more powerful.</p>
 
 <p>Callbacks are similar to threads because they act in an <strong>asynchronous</strong> manner. This means that they may occur at any time and in any order (within reason). This is important because it prevents <strong>blocking</strong>. For example, other tasks can be performed while a task is reading information from a hard disk. This is absolutely imperative for any high performance software system.</p>
 
@@ -163,21 +119,43 @@
 <p>If this were implemented using threads, there&rsquo;s a possibility that the file count would become corrupted due to <a href="http://www.vogella.com/tutorials/JavaConcurrency/article.html">concurrency issues</a>. However, because of callbacks, the system can be efficient, yet avoid (most) threading problems.</p>
 
 <p>All in all, callbacks are hybrids of threads, balancing performance and simplicity. They are <em>asynchronously synchronous</em> because they could be called at any time, yet they cannot run at the same time as other functions.</p>
-&#8211;>
-        <!---->
-        <!---->
+
+        </div>
     </div>
+
+    <div class="row article-nav">
+        <div class="span3 prev">
+            
+        </div>
+        <div class="span6 sharing">
+            <div class="sharing">
+  <div class="addthis_toolbox addthis_default_style ">
+  
+  
+  <a class="addthis_button_tweet"></a>
+  
+  
+  <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+  
+  <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
 </div>
 
-
-
-    </article>
-    
-    <div class="pagination">
-        
-
-        
+        </div>
+        <div class="span3 next">
+            
+        </div>
     </div>
+
+    
+    <section>
+        <h1>Comments</h1>
+
+        <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+    </section>
+    
 </div>
 
 
@@ -228,7 +206,10 @@
       var disqus_shortname = 'wwwjeremypnautacom';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.jeremypnauta.com/blog/2014/02/24/javascript-asynchronously-synchronous/';
+        var disqus_url = 'http://www.jeremypnauta.com/blog/2014/02/24/javascript-asynchronously-synchronous/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
