@@ -1,0 +1,43 @@
+*, h1, h2, h3, h4, h5, .jumbotron {
+  font-weight: 300;
+}
+
+footer {
+  text-align: left;
+}
+
+.navbar-default {
+  background-color: white;
+  border-color: white;
+}
+
+.post-summaries {
+  margin-bottom: 40px;
+  font-size: 2vmin;
+}
+
+.post-summaries .title {
+  color: var(--accent2);
+  text-transform: uppercase;
+}
+
+.profile {
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.profile .profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.navbar-brand {
+  padding: 15px;
+}
+
+.navbar-brand img {
+  max-height: 100%;
+}
