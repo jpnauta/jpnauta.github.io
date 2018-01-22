@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on Jeremy Nauta</title>
+    <link>http://jeremypnauta.com/tags/javascript/</link>
+    <description>Recent content in Javascript on Jeremy Nauta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 24 Feb 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://jeremypnauta.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bakery Order Manager</title>
+      <link>http://jeremypnauta.com/projects/baker-order-manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jeremypnauta.com/projects/baker-order-manager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Enumerate.js</title>
+      <link>http://jeremypnauta.com/projects/enumerate-js/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jeremypnauta.com/projects/enumerate-js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Orchardbot</title>
+      <link>http://jeremypnauta.com/projects/orchardbot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jeremypnauta.com/projects/orchardbot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript - Asynchronously Synchronous</title>
+      <link>http://jeremypnauta.com/posts/javascript-asynchronously-synchronous/</link>
+      <pubDate>Mon, 24 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://jeremypnauta.com/posts/javascript-asynchronously-synchronous/</guid>
+      <description>One of the most powerful features of Javascript is its callback system. While callbacks act similar to threads, they are distinctly different and more powerful.
+Callbacks are similar to threads because they act in an asynchronous manner. This means that they may occur at any time and in any order (within reason). This is important because it prevents blocking. For example, other tasks can be performed while a task is reading information from a hard disk.</description>
+    </item>
+    
+  </channel>
+</rss>

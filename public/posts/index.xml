@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Jeremy Nauta</title>
+    <link>http://jeremypnauta.com/posts/</link>
+    <description>Recent content in Posts on Jeremy Nauta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://jeremypnauta.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Enumeration - Best Practices</title>
+      <link>http://jeremypnauta.com/posts/enumeration-best-practices/</link>
+      <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://jeremypnauta.com/posts/enumeration-best-practices/</guid>
+      <description>The Dream Dear fellow developers, let me propose a big idea.
+In the age of multi-repository and multi-language projects, it should be easy to create, understand, and manage enumerations and constants in a platform-independent manner.
+This is the end goal of my project, Enumerate.js.
+Differences of opinion have prevented this from happening in our world, but I am confident that this is possible.
+First, let me explain the issue with an example.</description>
+    </item>
+    
+    <item>
+      <title>Javascript - Asynchronously Synchronous</title>
+      <link>http://jeremypnauta.com/posts/javascript-asynchronously-synchronous/</link>
+      <pubDate>Mon, 24 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://jeremypnauta.com/posts/javascript-asynchronously-synchronous/</guid>
+      <description>One of the most powerful features of Javascript is its callback system. While callbacks act similar to threads, they are distinctly different and more powerful.
+Callbacks are similar to threads because they act in an asynchronous manner. This means that they may occur at any time and in any order (within reason). This is important because it prevents blocking. For example, other tasks can be performed while a task is reading information from a hard disk.</description>
+    </item>
+    
+  </channel>
+</rss>
