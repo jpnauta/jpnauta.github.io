@@ -1,9 +1,8 @@
 baseURL = "http://jeremypnauta.com/"
 languageCode = "en-us"
 title = "Jeremy Nauta"
-disqusShortname = "dsq-app7070"
+# disqusShortname = ""
 # googleAnalytics = ""
-publishDir = "docs"
 
 [params]
     author = "Jeremy Nauta"

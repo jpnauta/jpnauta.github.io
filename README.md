@@ -26,5 +26,22 @@ Use this command to generate a new page
 hugo new post/my-post.md
 ```
 
+# Publishing
 
+
+If you haven't already, you will need to add
+[jpnauta.github.io][jpnauta.github.io repo] as a Git Submodule.
+
+```bash
+git submodule add -b master https://github.com/jpnauta/jpnauta.github.io.git public
+```
+
+To publish, simply run the bash command.
+
+```bash
+bash deploy.sh
+```
+
+
+[jpnauta.github.io repo]: https://github.com/jpnauta/jpnauta.github.io
 [hugo]: https://gohugo.io/

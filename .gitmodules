@@ -1,0 +1,4 @@
+[submodule "jpnauta.github.io"]
+	path = jpnauta.github.io
+	url = https://github.com/jpnauta/jpnauta.github.io.git
+	branch = master
