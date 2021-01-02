@@ -50,7 +50,7 @@
 
 
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
- <meta name="generator" content="Hugo 0.33" />
+ <meta name="generator" content="Hugo 0.75.1" />
         
         
         
@@ -103,8 +103,6 @@
                                 <li><a href="/posts/">Posts</a></li>
                             
                                 <li><a href="/projects/">Projects</a></li>
-                            
-                                <li><a href="https://www.facebook.com/Sibilance-116415961747035/">Music</a></li>
                             
                         </ul>
                     
@@ -162,82 +160,51 @@
 </div>
 
 
-    <br> <div class="text-justify">
-
-<h2 id="the-dream">The Dream</h2>
-
+    <br> <div class="text-justify"><h2 id="the-dream">The Dream</h2>
 <p>Dear fellow developers, let me propose a big idea.</p>
-
 <p><em><strong>In the age of multi-repository and multi-language projects, it should
 be easy to create, understand, and manage enumerations and constants in
 a platform-independent manner.</strong></em></p>
-
 <p>This is the end goal of my project, <a href="https://github.com/enumeratejs">Enumerate.js</a>.</p>
-
 <p>Differences of opinion have prevented this from happening in our world,
 but I am confident that this is possible.</p>
-
 <p>First, let me explain the issue with an example.</p>
-
 <h2 id="the-problem">The Problem</h2>
-
 <p>Bob, Jane, Carl, Linda and Jim work at Beautiful Software Incorporated. They are
 working together on a multi-repository project and a simple database
 of <code>User</code> objects. Here is their story.</p>
-
 <p>One day, Bob decides to add an enumerated field called <code>user_type</code> to
 their <code>User</code> database. Bob decides that the number <code>42</code> will represent a user
 with a type of <code>Client</code>.</p>
-
 <p>Jane uses Bob&rsquo;s documentation and commits this code into repository #2.</p>
-
 <pre><code>if (user.user_type == 42) {...}
-</code></pre>
-
-<p>Carl is not happy about this. Carl does not know what <code>42</code> means.
+</code></pre><p>Carl is not happy about this. Carl does not know what <code>42</code> means.
 Carl decides to edit Jane&rsquo;s code.</p>
-
 <pre><code>if (user.user_type == 42) {...}  // WTF is '42'?!?!
-</code></pre>
-
-<p>Linda knows how to solve this. She edit&rsquo;s the code like this.</p>
-
+</code></pre><p>Linda knows how to solve this. She edit&rsquo;s the code like this.</p>
 <pre><code>USER_TYPES = {
   EMPLOYEE: 42,
   ...
 }
 
 if (user.user_type == USER_TYPES.EMPLOYEE) {...}
-</code></pre>
-
-<p>Now Jim is angry. He does not want to import <code>USER_TYPES</code> everywhere, and
+</code></pre><p>Now Jim is angry. He does not want to import <code>USER_TYPES</code> everywhere, and
 is worried that <code>USER_TYPES</code> will become out of sync with repository #1.</p>
-
 <p><em>Surely there must be a better way than this&hellip;</em></p>
-
 <h2 id="the-principles">The Principles</h2>
-
 <p><em>All developers have ran into disagreements like these</em>. Now, I would
 like to propose some principles for enumerations to solve these issues.</p>
-
 <h3 id="1-constants-should-be-human-readable">1. Constants should be human readable</h3>
-
 <p>While integer-based enumerations have good performance implications, they
 are difficult to read. By contrast, string-based enumerations are
 much easier to read.</p>
-
 <p>In the modern age of fast computers, the need for human readability almost
 always outweighs the cost of performance.</p>
-
 <pre><code>if (user.user_type == 'employee') {...}  ✓ Good - I can understand this code easily
 if (user.user_type == 2) {...}  x Bad - Not readable - what is '2'?
-</code></pre>
-
-<h3 id="2-constants-should-be-globally-unique-for-the-entire-project">2. Constants should be globally unique for the entire project</h3>
-
+</code></pre><h3 id="2-constants-should-be-globally-unique-for-the-entire-project">2. Constants should be globally unique for the entire project</h3>
 <p>To avoid ambiguity, all projects and enumerations should have uniquely
 identifiable constants.</p>
-
 <pre><code>x Bad - Two enumerations have the same constants 'foo' and 'bar'
 Enum1 = {'foo', 'bar', 'qux'}
 Enum2 = {'foo', 'bar'}
@@ -245,10 +212,7 @@ Enum2 = {'foo', 'bar'}
 ✓ Good - The prefixes 'e1_' and 'e2_' make constants unique
 Enum1 = {'e1_foo', 'e1_bar', 'e1_qux'}
 Enum2 = {'e1_foo', 'e1_bar'}
-</code></pre>
-
-<h3 id="3-conditional-statements-with-enumerations-are-not-future-proof">3. Conditional statements with enumerations are not future proof</h3>
-
+</code></pre><h3 id="3-conditional-statements-with-enumerations-are-not-future-proof">3. Conditional statements with enumerations are not future proof</h3>
 <pre><code>✓ Good - future proof and readable
 DATA_MAP = {
    'employee': 'a',
@@ -261,22 +225,15 @@ x Bad
 if (user.user_type == 'employee') print 'a'
 if (user.user_type == 'user') print 'b'
 if (user.user_type == 'other') print 'c'
-</code></pre>
-
-<h3 id="4-enumeration-maps-should-be-platform-independent-and-serializable">4. Enumeration maps should be platform independent and serializable</h3>
-
+</code></pre><h3 id="4-enumeration-maps-should-be-platform-independent-and-serializable">4. Enumeration maps should be platform independent and serializable</h3>
 <p>It should be easy to transfer an enumeration from one repository to another.
 Application-logic specific code should be ran sometime after the first
 definition.</p>
-
 <pre><code>USER_MAP = {  x Bad - 'Date' and `MyClass1` are programming language specific
    'employee': Date(1, 2, 3),
    'employee': MyClass1,
 }
-</code></pre>
-
-<h3 id="5-it-should-be-easy-to-synchronize-constants-over-multiple-projects">5. It should be easy to synchronize constants over multiple projects</h3>
-
+</code></pre><h3 id="5-it-should-be-easy-to-synchronize-constants-over-multiple-projects">5. It should be easy to synchronize constants over multiple projects</h3>
 <p>If a developer adds a new constant to an enumeration, it should be
 easy and simple to transfer those changes to all related projects.</p>
 </div>

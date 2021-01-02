@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Jeremy Nauta</title>
@@ -6,10 +6,16 @@
     <description>Recent content in Posts on Jeremy Nauta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Jan 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://jeremypnauta.com/posts/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Wed, 02 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://jeremypnauta.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Writing Fast Code With Oreos (OEOs)</title>
+      <link>http://jeremypnauta.com/posts/writing-fast-code-with-oreos/</link>
+      <pubDate>Wed, 02 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://jeremypnauta.com/posts/writing-fast-code-with-oreos/</guid>
+      <description>The Problem You are tasked with making a classic shopping cart system. You have been assured that this system will need to be extremely fast, as it will be used for millions of transactions in the next year. How do you write code that can be easily optimized, and will therefore set yourself and other developers for success in the upcoming iterations?
+In my experience, the difficulty to optimize code is proportional to how well it conforms to distinct ETL stages, which I like to call OEOs (pronounced like a child saying &amp;ldquo;Oreo&amp;rdquo;).</description>
+    </item>
     
     <item>
       <title>Enumeration - Best Practices</title>

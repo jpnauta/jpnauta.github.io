@@ -50,7 +50,7 @@
 
 
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
- <meta name="generator" content="Hugo 0.33" />
+ <meta name="generator" content="Hugo 0.75.1" />
         
         
         
@@ -103,8 +103,6 @@
                                 <li><a href="/posts/">Posts</a></li>
                             
                                 <li><a href="/projects/">Projects</a></li>
-                            
-                                <li><a href="https://www.facebook.com/Sibilance-116415961747035/">Music</a></li>
                             
                         </ul>
                     
@@ -163,7 +161,6 @@
     <br> <div class="text-justify"><p>One of the most powerful features of Javascript is its <em>callback</em>
 system. While callbacks act similar to threads, they are distinctly
 different and more powerful.</p>
-
 <p>Callbacks are similar to threads because they act in an
 <em>asynchronous</em> manner. This means that they may occur at any time
 and in any order (within reason). This is important because it
@@ -171,14 +168,11 @@ prevents <em>blocking</em>. For example, other tasks can be performed
 while a task is reading information from a hard disk.
 This is absolutely imperative for any high performance software
 system.</p>
-
 <p>However, callbacks are <em>not truly asynchronous</em> because they only
 allow one task to be performed at a time. Unlike threads, no two
 callbacks can be running at the same time.</p>
-
 <p><em>So what?</em> This means that Javascript callbacks can share variables
 with little to no headache. Consider the following situation in NodeJS:</p>
-
 <pre><code>var filePaths = ['test.txt', 'test2.txt'];
 var fileCount = 0; //Indicates how many files in filePaths exist
 
@@ -189,14 +183,11 @@ for (var i in filePaths) {
         }
     });
 }
-</code></pre>
-
-<p>If this were implemented using threads, there’s a possibility
+</code></pre><p>If this were implemented using threads, there’s a possibility
 that the file count would become corrupted due to
 <a href="http://www.vogella.com/tutorials/JavaConcurrency/article.html">concurrency issues</a>.
 However, because of callbacks, the system can be efficient, yet
 avoid (most) threading problems.</p>
-
 <p>All in all, callbacks are hybrids of threads, balancing performance
 and simplicity. They are <em>asynchronously synchronous</em> because they
 could be called at any time, yet they cannot run at the same time

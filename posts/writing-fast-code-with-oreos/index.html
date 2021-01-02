@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Writing Fast Code With Oreos (OEOs)</title>
+        <style>
+
+    html body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: #FFB000;
+        --accent2: #1dbbd6;
+        --border-width:  0 ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="http://jeremypnauta.com//css/main.css">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans:300,400">
+
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="http://jeremypnauta.com//css/custom.css"> 
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.75.1" />
+        
+        
+        
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+    </head>
+
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand" href="http://jeremypnauta.com/"><img src="http://jeremypnauta.com/android-icon-192x192.png" /></a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/about-me/">About Me</a></li>
+                            
+                                <li><a href="/posts/">Posts</a></li>
+                            
+                                <li><a href="/projects/">Projects</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:jeremypnauta@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/jpnauta/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://bitbucket.org/jpnauta/"><i class="fa fa-bitbucket"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/jeremy-nauta-01b65680/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/JeremyNauta/"><i class="fa fa-twitter"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+    
+    
+
+    
+        <h4><a href="/posts/writing-fast-code-with-oreos/">Writing Fast Code With Oreos (OEOs)</a></h4>
+    
+    
+        <h5>December 2, 2020</h5>
+    
+    
+    <a href="http://jeremypnauta.com/tags/performance"><kbd class="item-tag">performance</kbd></a>
+    
+    <a href="http://jeremypnauta.com/tags/optimization"><kbd class="item-tag">optimization</kbd></a>
+    
+    <a href="http://jeremypnauta.com/tags/django"><kbd class="item-tag">django</kbd></a>
+    
+    <a href="http://jeremypnauta.com/tags/python"><kbd class="item-tag">python</kbd></a>
+    
+
+</div>
+
+
+    <br> <div class="text-justify"><h2 id="the-problem">The Problem</h2>
+<p>You are tasked with making a classic shopping cart system. You have been assured that this system will
+need to be extremely fast, as it will be used for millions of transactions in the next year. How do you
+write code that can be easily optimized, and will therefore set yourself and other developers for success
+in the upcoming iterations?</p>
+<p>In my experience, the difficulty to optimize code is proportional to how well it conforms to distinct ETL
+stages, which I like to call OEOs (pronounced like a child saying &ldquo;Oreo&rdquo;). We&rsquo;ll talk more on this later;
+first, we need to clarify some terminology.</p>
+<p><strong>NOTE</strong>: For simplicity, this article will use a classical database design and an ORM to load and
+save the data. There are many other ways to design systems, and the same principles apply.</p>
+<h2 id="etl">ETL</h2>
+<p>Let&rsquo;s define <a href="https://en.wikipedia.org/wiki/Extract,_transform,_load">ETL</a> operations for this discussion.</p>
+<p>E = Extract. We need to load all relevant data into our system to perform the task, whether its from the
+user, database, or anywhere else.</p>
+<p>T = Transform. We need to apply our business logic and build our new information.</p>
+<p>L = Load. This is where we save our new information into the system.</p>
+<h2 id="performance-optimization">Performance Optimization</h2>
+<p>In my experience with traditional ORM systems, <em>80% of the work is done through database access optimization</em>,
+which we will focus on in this article. Django has great <a href="https://docs.djangoproject.com/en/3.1/topics/db/optimization/">documentation</a> on
+how to do this if you&rsquo;re interested. However, regardless of what ORM you use: if you need to load, save
+or delete multiple DB objects of the same type, why not do it all in a single query? In turn, this will
+reduce your code&rsquo;s <a href="https://en.wikipedia.org/wiki/Big_O_notation">Big-O Notation</a>.</p>
+<h2 id="make-it-work-make-it-right-make-it-fast">Make it Work, Make it Right, Make it Fast</h2>
+<p>You have likely heard the saying from <a href="https://wiki.c2.com/?MakeItWorkMakeItRightMakeItFast#:~:text=your%20code%20base.%5D-,Right.,to%20DesignForPerformance%20ahead%20of%20time.">Kent Beck</a>: <em>Make it work, make it right, make it fast</em>. This
+is an vital concept for any successful programmer.</p>
+<p>The first step in writing code is always to make things <em>actually work</em>.</p>
+<p>After implementing a proof of concept, developers apply common principles to clean my code, especially
+when that feature is likely to be altered by others in the future.</p>
+<p>In the final &ldquo;make it fast&rdquo; stage, developers should implement best practices to prepare for future
+code optimizations. The question is, <em>what principles should I apply to prepare for future optimizations?</em></p>
+<h2 id="shopping-cart-example">Shopping Cart Example</h2>
+<p>Back to our shopping cart example. Suppose we have written this code to parse and save a user&rsquo;s shopping
+cart, but must now &ldquo;make it fast&rdquo;.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Parse user info - one order with two products associated with it</span>
+order_data <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;order_products&#34;</span>: [{<span style="color:#e6db74">&#34;quantity&#34;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;product_id&#34;</span>: <span style="color:#ae81ff">123</span>}, {<span style="color:#e6db74">&#34;quantity&#34;</span>: <span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#34;product_id&#34;</span>: <span style="color:#ae81ff">456</span>}]}
+
+<span style="color:#75715e"># Build and save order</span>
+order <span style="color:#f92672">=</span> Order(
+    name<span style="color:#f92672">=</span>order_data[<span style="color:#e6db74">&#34;name&#34;</span>],
+)
+order<span style="color:#f92672">.</span>save()
+
+<span style="color:#66d9ef">for</span> record <span style="color:#f92672">in</span> order_data[<span style="color:#e6db74">&#34;order_products&#34;</span>]:
+    <span style="color:#75715e"># Fetch existing product by ID</span>
+    product <span style="color:#f92672">=</span> Product<span style="color:#f92672">.</span>objects<span style="color:#f92672">.</span>get(record[<span style="color:#e6db74">&#34;product_id&#34;</span>])
+
+    <span style="color:#75715e"># Build relationship to product</span>
+    order_product <span style="color:#f92672">=</span> OrderProduct(
+        order<span style="color:#f92672">=</span>order,
+        quantity<span style="color:#f92672">=</span>record[<span style="color:#e6db74">&#34;quantity&#34;</span>],
+        product<span style="color:#f92672">=</span>product,
+    )
+
+    <span style="color:#75715e"># Save relationship to product</span>
+    order_product<span style="color:#f92672">.</span>save()
+</code></pre></div><h2 id="operational-execution-analysis-example">Operational Execution Analysis Example</h2>
+<p>Our code above can be summarized by these sequential operations:</p>
+<ul>
+<li>Parse the user&rsquo;s shopping order info (extract)</li>
+<li>Create order (transform)</li>
+<li>Save order (load)</li>
+<li>Fetch product #1 (extract)</li>
+<li>Create order product #1 (transform)</li>
+<li>Save order product #1 (load)</li>
+<li>Fetch product #2 (extract)</li>
+<li>Create order product #2 (transform)</li>
+<li>Save order product #2 (load)</li>
+</ul>
+<p>We will characterize this to <code>ETLETLETL</code> (the first letter of each change in operation type). Let&rsquo;s
+call this our <code>Operational Execution Order</code>, or <code>OEO</code> - sounds delicious!</p>
+<p>Suppose after profiling our code, we determine that the best optimization is to fetch all
+products in a single query. This would change our algorithm to:</p>
+<ul>
+<li>Parse the user&rsquo;s shopping order info (extract)</li>
+<li>Fetch all products (extract)</li>
+<li>Create order (transform)</li>
+<li>Save order (load)</li>
+<li>Create order product #1 (transform)</li>
+<li>Save order product #1 (load)</li>
+<li>Create order product #2 (transform)</li>
+<li>Save order product #2 (load)</li>
+</ul>
+<p>Our OEO is now <code>ETLTLTL</code>. Notice how there is now only one <code>E</code> because all
+the <code>extract</code> operations happen in the same section of code, and thus reduced the number of changes
+in operation types. Our code optimization made our OEO smaller (but so much tastier)!</p>
+<p>Let&rsquo;s do another optimization by saving all order products in a single query. Our algorithm is now:</p>
+<ul>
+<li>Parse the user&rsquo;s shopping order info (extract)</li>
+<li>Fetch all products (extract)</li>
+<li>Create order (transform)</li>
+<li>Save order (load)</li>
+<li>Create order product #1 (transform)</li>
+<li>Create order product #2 (transform)</li>
+<li>Save all order products (load)</li>
+</ul>
+<p>Now we have an algorithm of <code>ETLTL</code>. Once again, it appears that optimizing our code required us to change
+the order of operations and subsequently reduce the length of our OEO - so tasty!</p>
+<p>Finally, while this is not necessary, let&rsquo;s save the order object at the same time as the order products.</p>
+<ul>
+<li>Parse the user&rsquo;s shopping order info (extract)</li>
+<li>Fetch all products (extract)</li>
+<li>Create order (transform)</li>
+<li>Create order product #1 (transform)</li>
+<li>Create order product #2 (transform)</li>
+<li>Save order (load)</li>
+<li>Save all order products (load)</li>
+</ul>
+<p>This code now has an OEO of <code>ETL</code>. All <code>extract</code> operations occur
+first, followed by <code>transform</code>, then <code>load</code> - three distinct and mouthwatering layers!</p>
+<h2 id="the-verdict">The Verdict</h2>
+<p>Let&rsquo;s be clear: it is not necessary to optimize your code on day one! However, if your code is likely
+to need optimization in the near future, it is vital to set yourself up for success, and to do this we
+must understand how code evolves during performance tuning.</p>
+<p>When code is optimized, the order of operations must almost always change, and the order of operations
+gravitates towards three distinct stages: extract, then transform, then load. Therefore, the sooner
+we can define our code into these distinct stages, the less we will need to refactor the code,
+and therefore save time in the future.</p>
+<p>OEO analysis can be used to determine how well we are prescribing two these distinct ETL stages,
+and potentially guide us to write better and more future-proof code.</p>
+<p>If Oreos are the perfect three-layered cookie, then the perfect three stages of an OEO is
+<code>ETL</code> (or possibly <code>ELT</code>).</p>
+<p>This is the number one lesson I&rsquo;ve learned in all my time optimizing code. Let me know what you think!</p>
+</div>
+
+    
+    
+
+    
+
+    
+
+</main>
+
+        <footer class="container">
+
+            <p class="copyright text-muted">
+              © 2018 Jeremy Nauta
+            </p>
+
+        </footer>
+       
+    </body>
+
+</html>
+

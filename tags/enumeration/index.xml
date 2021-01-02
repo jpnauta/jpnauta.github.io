@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Enumeration on Jeremy Nauta</title>
+    <title>enumeration on Jeremy Nauta</title>
     <link>http://jeremypnauta.com/tags/enumeration/</link>
-    <description>Recent content in Enumeration on Jeremy Nauta</description>
+    <description>Recent content in enumeration on Jeremy Nauta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Jan 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://jeremypnauta.com/tags/enumeration/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 10 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://jeremypnauta.com/tags/enumeration/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Enumerate.js</title>
       <link>http://jeremypnauta.com/projects/enumerate-js/</link>
