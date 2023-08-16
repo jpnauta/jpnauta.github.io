@@ -23,7 +23,7 @@ hugo server -D
 Use this command to generate a new page
 
 ```bash
-hugo new post/my-post.md
+hugo new posts/my-post.md
 ```
 
 # Publishing
@@ -33,7 +33,7 @@ If you haven't already, you will need to add
 [jpnauta.github.io][jpnauta.github.io repo] as a Git Submodule.
 
 ```bash
-git submodule add -b master https://github.com/jpnauta/jpnauta.github.io.git public
+git submodule add -b master git@github.com:jpnauta/jpnauta.github.io.git public
 ```
 
 To publish, simply run the bash command.
