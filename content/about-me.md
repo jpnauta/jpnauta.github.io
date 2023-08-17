@@ -16,7 +16,7 @@ code or dreaming of big ideas.
 
 
 I love building beautiful things with software. I tend to prefer
-Node.js and Python, but I don't discriminate.
+Python, Go and Node.js, but I don't discriminate.
 
 Let’s talk! If you like what you read, leave a comment or [email][email] me.
 
